@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html {
+    --blue: #27498C;
+    --light-blue: #A9B9D9;
+    --orange: #F38233;
+    --light-orange: #FFB47F;
+    --white: #FFFFFF;
+    --black: #606060;
+
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+::selection {
+    background: var(--light-orange);
+    color: var(--blue);
+}
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 5rem;
+    background: var(--blue);
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: .03rem;
+    box-shadow: 0rem .4rem .4rem rgba(0, 0, 0, 0.2);
+}
+
+header section {
+    display: flex;
+    width: 94rem;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-top: 1.2rem;
+}
+
+main {
+    width: 94rem;
+    margin: 0 auto;
+}
+
+/*   SEÇÃO INICIAL   */
+section.card {    
+    margin-top: 5rem;
+    background: url('../assets/card-home.png') no-repeat top/contain;
+    height: 67rem;
+    width: 94rem;
+    color: var(--white);
+}
+
+section.card .content a.logo {
+    display: inline-block;
+    margin: 4rem 10rem 4rem 10rem;
+    fill: var(--white);
+}
+
+section.card .content h2 {
+    max-width: 62rem;
+    margin: 0rem 0rem 2rem 10rem;
+    font-size: 4rem;
+    line-height: 5rem;
+}
+
+section.card .content p {
+    margin-left: 10rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: .03rem;
+}
+
+span.highlight {
+    color: var(--light-orange);
+}
+
+/*   FORM   */
+form {
+    /* display: block; */
+    margin-left: 10rem;
+    margin-top: 4rem;
+    padding: 4rem;
+    background-color: var(--white);
+    width: 50rem;
+    height: 37rem;
+
+    color: var(--light-blue);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.input-data {
+    display: inline-block;
+}
+
+.input-data:nth-child(2) label {
+    margin-left: 2rem;
+}
+
+input,
+textarea {
+    display: block;
+    border-bottom: solid .2rem rgba(169, 185, 217, 0.2);
+    height: 3rem;
+    margin-bottom: .5rem;
+
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .03rem;
+    color: var(--black);
+    font-size: 1.6rem;
+}
+
+input#name {
+    width: 24.5rem;
+}
+
+input#cell {
+    width: 15rem;
+    margin-left: 2rem;
+}
+
+input#email {
+    width: 42rem;
+}
+
+textarea {
+    display: block;
+    height: 7rem;
+    width: 42rem;
+    resize: none;
+    margin-bottom: 1rem;
+}
+
+/*   BUTTON   */
+button#submit {
+    width: 42rem;
+    height: 5rem;
+    margin-bottom: 0rem;
+    background: var(--orange);
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--white);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/*  SERVICES  */
+.services {
+    background: rgba(169, 185, 217, 0.1);
+    padding-bottom: 3rem;
+}
+
+.services h1 {
+    margin-top: 10rem;
+    font-weight: 700;
+    font-size: 3.2rem;
+    text-align: center;
+    color: var(--orange);
+}
+
+/*  CARD WHATSTAPP  */
+.card-whatsapp {
+    height: 10rem;
+    width: 50rem;
+    margin-left: 10rem;
+
+    text-align: center;
+    background: var(--blue);
+}
+
+.card-whatsapp p {
+    padding-top: 1rem;
+    font-size: 1.8rem;
+    color: var(--light-blue);
+}
+
+.card-whatsapp h2 {
+    font-weight: 700;
+    font-size: 3.6rem;
+    color: var(--white);
+
+    cursor: pointer;
+}
+
+/*  CARDS SERVICES  */
+.services .cards-services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem 4rem;
+
+    margin-top: 4rem;
+    padding: 4rem;
+    width: 100%;
+    background: rgb(169, 185, 217, 0.25);
+}
+
+/*  CARD SERVICE  */
+.card-service {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas:
+                    "i t"
+                    ". d";
+    height: 10rem;
+    width: 26rem;
+}
+
+.card-service img {
+    height: 4.5rem;
+    grid-area: i;
+}
+
+.card-service h4 {
+    margin-left: 1.5rem;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--blue);
+    grid-area: t;
+}
+
+.card-service p {
+    margin-left: 1.5rem;
+    grid-area: d;
+    font-size: 1.4rem;
+    color: var(--blue);
+}
+
+/*  CREDIT CARDS  */
+.credit-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 3rem;
+    width: 82rem;
+    height: 10rem;
+    border-radius: 1rem;
+    background: var(--white);
+}
+
+.credit-cards img {
+    margin: 3.5rem;
+}
