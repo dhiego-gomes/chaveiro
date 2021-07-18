@@ -58,51 +58,14 @@
 
             <h1>Nós prestamos os seguintes serviços:</h1>
             <div class="cards-services">
-                <div class="card-service">
-                    <img src="assets/chave-casa.svg" alt="Chave comum">
-                    <h4>Chave comum e tetra</h4>
-                    <p>Cópias de chave comum e tetra</p>
-                </div>
-                <div class="card-service">
-                    <img src="assets/chave-casa.svg" alt="Chave comum">
-                    <h4>Chave comum e tetra</h4>
-                    <p>Cópias de chave comum e tetra</p>
-                </div>
-                <div class="card-service">
-                    <img src="assets/chave-casa.svg" alt="Chave comum">
-                    <h4>Chave comum e tetra</h4>
-                    <p>Cópias de chave comum e tetra</p>
-                </div>
-                <div class="card-service">
-                    <img src="assets/chave-casa.svg" alt="Chave comum">
-                    <h4>Chave comum e tetra</h4>
-                    <p>Cópias de chave comum e tetra</p>
-                </div>
-                <div class="card-service">
-                    <img src="assets/chave-casa.svg" alt="Chave comum">
-                    <h4>Chave comum e tetra</h4>
-                    <p>Cópias de chave comum e tetra</p>
-                </div>
-                <div class="card-service">
-                    <img src="assets/chave-casa.svg" alt="Chave comum">
-                    <h4>Chave comum e tetra</h4>
-                    <p>Cópias de chave comum e tetra</p>
-                </div>
-                <div class="card-service">
-                    <img src="assets/chave-casa.svg" alt="Chave comum">
-                    <h4>Chave comum e tetra</h4>
-                    <p>Cópias de chave comum e tetra</p>
-                </div>
-                <div class="card-service">
-                    <img src="assets/chave-casa.svg" alt="Chave comum">
-                    <h4>Chave comum e tetra</h4>
-                    <p>Cópias de chave comum e tetra</p>
-                </div>
-                <div class="card-service">
-                    <img src="assets/chave-casa.svg" alt="Chave comum">
-                    <h4>Chave comum e tetra</h4>
-                    <p>Cópias de chave comum e tetra</p>
-                </div>
+                <% services.forEach(service => { %> 
+                    
+                    <div class="card-service">
+                        <img src="assets/<%= service.icon %>.svg" alt="Chave comum">
+                        <h4><%= service.name %></h4>
+                        <p><%= service.description %></p>
+                    </div>
+                <% }) %>
             </div>
             
             <section class="credit-cards">

@@ -1,0 +1,47 @@
+[
+        {
+            "name": "Chave comum e tetra",
+            "icon": "chave-casa",
+            "description": "Cópias de chave comum e tetra"
+        },
+        {
+            "name": "Chave automotiva",
+            "icon": "chave-carro",
+            "description": "Com ferramentas originais apropriadas"
+        },
+        {
+            "name": "Abertura",
+            "icon": "abertura",
+            "description": "Residencial e automotiva"
+        },
+        {
+            "name": "Afiação",
+            "icon": "afiacao",
+            "description": "Alicates de cutícula, tesouras facas e ferramentas"
+        },
+        {
+            "name": "Recuperação de fechaduras",
+            "icon": "fechadura",
+            "description": "Residencial e automotiva"
+        },
+        {
+            "name": "Unificação de fechadura residencial",
+            "icon": "chave-casa-unificada",
+            "description": ""
+        },
+        {
+            "name": "Unificação de chave automotiva",
+            "icon": "chave-carro-unificada",
+            "description": "Apenas modelos antigos. Verifique a disponibilidade"
+        },
+        {
+            "name": "Produtos à venda",
+            "icon": "produtos",
+            "description": "Apenas modelos antigos. Verifique a disponibilidade"
+        },
+        {
+            "name": "Retiramos e entregamos o seu material",
+            "icon": "delivery",
+            "description": "(verifique a disponibilidade)"
+        }
+    ]
