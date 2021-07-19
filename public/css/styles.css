@@ -16,6 +16,8 @@ html {
     --black: #606060;
 
     font-size: 62.5%;
+    scroll-behavior: smooth;
+
 }
 
 body {
@@ -147,7 +149,8 @@ textarea {
 }
 
 /*   BUTTON   */
-button#submit {
+button#submit,
+button {
     width: 42rem;
     height: 5rem;
     margin-bottom: 0rem;
@@ -158,8 +161,19 @@ button#submit {
     font-size: 1.8rem;
     color: var(--white);
     text-transform: uppercase;
+    text-decoration: none;
     cursor: pointer;
 }
+
+a:link {
+    color: var(--white);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--white);
+}
+
 
 /*  SERVICES  */
 .services {
@@ -167,12 +181,17 @@ button#submit {
     padding-bottom: 3rem;
 }
 
-.services h1 {
+h1 {
     margin-top: 10rem;
     font-weight: 700;
     font-size: 3.2rem;
     text-align: center;
     color: var(--orange);
+}
+
+.highlight-text {
+    font-weight: 700;
+    font-style: italic;
 }
 
 /*  CARD WHATSTAPP  */
@@ -202,13 +221,13 @@ button#submit {
 /*  CARDS SERVICES  */
 .services .cards-services {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 4rem 4rem;
+    grid-template-columns: 1fr 1fr;
+    /* gap: 4rem 4rem; */
 
     margin-top: 4rem;
-    padding: 4rem;
+    padding: 4rem 10rem;
     width: 100%;
-    background: rgb(169, 185, 217, 0.25);
+    background: rgba(169, 185, 217, 0.25);
 }
 
 /*  CARD SERVICE  */
@@ -218,26 +237,30 @@ button#submit {
     grid-template-rows: 1fr 2fr;
     grid-template-areas:
                     "i t"
-                    ". d";
+                    "i d";
     height: 10rem;
-    width: 26rem;
+    width: 32rem;
+}
+
+.card-service:nth-child(9), 
+.card-service:nth-child(10) {
+    height: 6rem;
 }
 
 .card-service img {
-    height: 4.5rem;
+    width: 4.5rem;
     grid-area: i;
 }
 
 .card-service h4 {
-    margin-left: 1.5rem;
+    grid-area: t;
     font-weight: 700;
     font-size: 1.8rem;
     color: var(--blue);
-    grid-area: t;
+    text-transform: uppercase;
 }
 
 .card-service p {
-    margin-left: 1.5rem;
     grid-area: d;
     font-size: 1.4rem;
     color: var(--blue);
@@ -258,4 +281,177 @@ button#submit {
 
 .credit-cards img {
     margin: 3.5rem;
+}
+
+/*  LOYALTY PROGRAMME  */
+.card-loyalty {
+    position: relative;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    float: left;
+    height: 29.5rem;
+    width: 45rem;
+    background: rgba(169, 185, 217, 0.1);
+    overflow: hidden;
+}
+
+.card-loyalty#copy {
+    margin-left: 4rem;
+}
+
+.card-loyalty img {
+    height: 20rem;
+    width: 20rem;
+    margin: -1rem 26rem;
+}
+
+.card-loyalty#copy img {
+    height: 28rem;
+    width: 15rem;
+    margin: -5rem 31rem;
+}
+
+.card-loyalty h4 {
+    position: absolute;
+    margin-left: 4rem;
+    width: 28rem;
+    padding: 5.6rem 0rem;
+
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 4.2rem;
+    color: var(--blue);
+}
+
+.conditions h3 {
+    position: absolute;
+    height: 10rem;
+    width: 45rem;
+    margin-top: 1rem;
+    background: var(--blue);
+
+    font-size: 3.2rem;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 2.5rem;
+    color: var(--white);
+}
+
+/*  REVIEWS  */
+.reviews {
+    display: flex;
+    height: 17.5rem;
+    width: 100%;
+    margin-top: 4rem;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(169, 185, 217, 0.1);
+}
+
+.review {
+    display: none;
+    float: right;
+}
+
+.review:target{
+    display: block;
+}
+
+.reviews p {
+    display: block;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1.8rem;
+    color: var(--black);
+    text-align: center;
+}
+
+.navigation {
+    position: relative;
+    width: 94rem;
+    display: flex;
+    margin-top: 5rem;
+    justify-content: center;
+}
+
+.manual-btn,
+.manual-btn-active {
+    background: var(--light-blue);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 2s;
+}
+
+.manual-btn.active {
+    background: var(--blue);
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 1rem;
+}
+
+/*  LOCATION  */
+.location h1 {
+    width: 45.5rem;
+    margin: 10rem auto 0rem;
+
+    color: var(--light-orange);
+}
+
+.map {
+    margin-top: 2rem;
+}
+
+/*  FOOTER  */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    background: url('../assets/imagem-footer.png') no-repeat top/contain;
+    height: 28.4rem;
+    width: 94rem;
+    margin: 3rem auto 0rem;
+    align-items: center;
+}
+
+footer h1 {
+    width: 94rem;
+    margin-top: 2rem;
+    color: var(--white);
+}
+
+footer p {
+    width: 94rem;
+    margin-top: -1rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: .03rem;
+    text-align: center;
+    color: var(--light-blue);
+}
+
+footer button {
+    margin: 0rem auto 4rem;
+}
+
+.end-footer {
+    height: 5rem;
+    width: 100%;    
+
+    background: var(--blue);
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--light-blue);
+    text-transform: uppercase;
+    letter-spacing: .03rem;
+}
+
+.end-footer section {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-top: 1.2rem;
+    width: 94rem;
 }

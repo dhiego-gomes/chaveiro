@@ -1,23 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <!-- Creator: CorelDRAW X7 -->
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="3.9794mm" height="3.8654mm" version="1.0" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-viewBox="0 0 398 387"
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="3.9794mm" height="3.9794mm" version="1.0" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 398 398"
  xmlns:xlink="http://www.w3.org/1999/xlink">
  <defs>
   <style type="text/css">
    <![CDATA[
-    .str0 {stroke:#FFB47F;stroke-width:16.93;stroke-linecap:round;stroke-linejoin:round}
     .fil0 {fill:none}
+    .fil1 {fill:#FFB47F;fill-rule:nonzero}
    ]]>
   </style>
  </defs>
  <g id="Camada_x0020_1">
   <metadata id="CorelCorpID_0Corel-Layer"/>
-  <g id="_2756913500592">
-   <path class="fil0 str0" d="M270 9c31,-2 62,9 85,33l1 1c45,44 45,116 0,160l-42 43c-19,18 -49,18 -67,0l-95 -95c-18,-18 -18,-48 0,-67l25 -25m18 -17c12,-12 25,-21 40,-26"/>
-   <path class="fil0 str0" d="M173 172l54 54 -152 152 -54 0 -13 -12 0 -30 165 -164z"/>
-   <rect class="fil0 str0" transform="matrix(0.157841 0.157842 -0.157841 0.157842 277.547 41.5288)" width="483" height="195" rx="97" ry="97"/>
-  </g>
+  <rect class="fil0" width="398" height="398"/>
+  <path class="fil1" d="M271 23c-5,0 -9,-4 -9,-8 0,-5 3,-9 8,-9 17,-1 34,2 49,8 16,6 30,15 42,27l1 2 0 0 0 0 1 0c23,24 35,55 35,86 0,31 -12,62 -36,86l0 0 0 0 0 0 0 0 -42 43 0 0 0 0c-11,11 -26,16 -40,16 -14,0 -28,-5 -39,-16l-14 -14 -146 146c-2,1 -4,2 -6,2l-54 0c-3,0 -5,-1 -6,-2l-13 -12c-1,-2 -2,-4 -2,-6l0 -30c0,-2 1,-4 2,-6l159 -158 -15 -15 0 0c-11,-11 -16,-25 -16,-40 0,-14 5,-28 16,-39l0 0 0 0 25 -25c3,-3 8,-3 12,0 3,3 3,9 0,12l-25 25 0 0 0 0c-8,8 -11,17 -11,27 0,10 3,20 11,28l0 0 21 21 0 0 54 54 0 0 20 20c7,7 17,11 27,11 10,0 20,-4 28,-11l0 0 42 -43 0 0 0 0 0 0c21,-20 31,-47 31,-74 0,-27 -10,-54 -30,-74l-1 0 0 0 0 0 0 0 -1 -2c-10,-10 -23,-18 -36,-23 -13,-5 -28,-8 -42,-7zm28 34l45 45c6,6 9,14 9,21 0,8 -3,16 -9,22l0 0c-6,6 -13,9 -21,9 -8,0 -15,-3 -21,-9l-46 -46 0 0c-6,-6 -9,-14 -9,-21 0,-8 3,-15 9,-21l0 0 0 0 0 0c6,-6 14,-9 22,-9 7,0 15,3 21,9l0 0zm33 57l-45 -45 0 0 0 0c-3,-3 -6,-4 -9,-4 -4,0 -7,1 -10,4l0 0 0 0c-2,2 -4,6 -4,9 0,3 1,7 4,9l0 0 46 46c2,2 6,4 9,4 3,0 7,-2 9,-4l0 0c3,-3 4,-6 4,-10 0,-3 -1,-6 -4,-9zm-117 118l-42 -42 -156 156 0 22 7 7 47 0 144 -143zm-14 -179c-4,4 -9,4 -12,0 -4,-3 -4,-8 0,-12 6,-6 13,-11 20,-16 7,-5 15,-9 23,-12 5,-1 10,1 11,5 2,5 -1,10 -5,11 -7,3 -14,6 -20,10 -6,4 -12,9 -17,14z"/>
  </g>
 </svg>

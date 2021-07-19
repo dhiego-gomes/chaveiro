@@ -7,7 +7,7 @@
         {
             "name": "Chave automotiva",
             "icon": "chave-carro",
-            "description": "Com ferramentas originais apropriadas"
+            "description": "Com ferramentas originais"
         },
         {
             "name": "Abertura",
@@ -17,7 +17,7 @@
         {
             "name": "Afiação",
             "icon": "afiacao",
-            "description": "Alicates de cutícula, tesouras facas e ferramentas"
+            "description": "Alicates, tesouras, facas e outros"
         },
         {
             "name": "Recuperação de fechaduras",
@@ -25,23 +25,28 @@
             "description": "Residencial e automotiva"
         },
         {
-            "name": "Unificação de fechadura residencial",
+            "name": "Unificação de chave automotiva",
+            "icon": "chave-carro-unificada",
+            "description": "Apenas modelos antigos"
+        },
+        {
+            "name": "Unificação de chave residencial",
             "icon": "chave-casa-unificada",
             "description": ""
         },
         {
-            "name": "Unificação de chave automotiva",
-            "icon": "chave-carro-unificada",
-            "description": "Apenas modelos antigos. Verifique a disponibilidade"
-        },
-        {
             "name": "Produtos à venda",
             "icon": "produtos",
-            "description": "Apenas modelos antigos. Verifique a disponibilidade"
+            "description": "Alicates de cutícula e cadeados"
         },
         {
-            "name": "Retiramos e entregamos o seu material",
+            "name": "Retiramos e entregamos",
             "icon": "delivery",
             "description": "(verifique a disponibilidade)"
+        },
+        {
+            "name": "Aceitamos cartões",
+            "icon": "cartao",
+            "description": "Crédito e débito"
         }
     ]

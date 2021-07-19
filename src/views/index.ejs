@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,300;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/utils.js"></script>
     <title>Gomes Chaveiro</title>
 </head>
 <body>
@@ -28,7 +29,7 @@
                 <h2>Ficou <span class="highlight">trancado fora</span> da sua casa, carro ou apartamento?</h2>
                 <p>Solicite o <span class="highlight">serviço de chaveiro</span> agora mesmo!</p>
             </div>
-            <form action="">
+            <form action="" id="form">
                 <div class="input-data">
                     <label for="name">Nome</label>                        
                     <input type="text" name="name" id="name" required autocomplete="off">
@@ -61,7 +62,7 @@
                 <% services.forEach(service => { %> 
                     
                     <div class="card-service">
-                        <img src="assets/<%= service.icon %>.svg" alt="Chave comum">
+                        <img src="assets/<%= service.icon %>.svg" alt="<%= service.name %>">
                         <h4><%= service.name %></h4>
                         <p><%= service.description %></p>
                     </div>
@@ -78,8 +79,76 @@
     
     </section>
 
+    <section class="loyalty-programme">
+        <h1>Já conhece nosso programa <span class="highlight-text">Cliente Fidelidade?</span></h1>
+        <section class="card-loyalty" id="sharpening">
+            <h4>Faça 6 afiações e ganhe 1 grátis!</h4>
+            <img src="../assets/alicate-fidelidade.svg" alt="Ícone de alicate de unha">
+            <div class="conditions">
+                <h3>6 afiações = 1 grátis</h3>
+            </div>
+        </section>
+        <section class="card-loyalty" id="copy">
+            <h4>Faça 6 cópias e ganhe 1 grátis!</h4>
+            <img src="../assets/chave-fidelidade.svg" alt="Ícone de uma chave">
+            <div class="conditions">
+                <h3>6 cópias = 1 grátis</h3>
+            </div>
+        </section>
+
+    </section>
+
+    <section class="reviews">
+        <div class="review" id="review-1">
+            <p>"1 Meus alicates ficaram excelentes! Muito bem amolados. Ameiii"</p>
+            <div class="navigation">
+                <a href="#review-1" class="manual-btn active"></a>
+                <a href="#review-2" class="manual-btn"></a>
+                <a href="#review-3" class="manual-btn"></a>
+            </div>
+        </div>
+        <div class="review" id="review-2">
+            <p>"2 Serviço de qualidade! Um excelente profissional, educado e atencioso."</p>
+            <div class="navigation">
+                <a href="#review-1" class="manual-btn"></a>
+                <a href="#review-2" class="manual-btn active"></a>
+                <a href="#review-3" class="manual-btn"></a>
+            </div>
+        </div>
+        <div class="review" id="review-3">
+            <p>"3 Terceiro comentário."</p>
+            <div class="navigation">
+                <a href="#review-1" class="manual-btn"></a>
+                <a href="#review-2" class="manual-btn"></a>
+                <a href="#review-3" class="manual-btn active"></a>
+            </div>
+        </div>
         
+    </section>
+        
+    <section class="location">
+        <h1>Av. B, 75 – Maranguape II Paulista, PE – CEP 53421-021</h1>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1397.1150063830949!2d-34.85940280393142!3d-7.932859532293698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab3d6352f3a1cb%3A0x3f3475fed7f2674f!2sGOMES%20CHAVEIRO!5e0!3m2!1spt-BR!2sbr!4v1626727268200!5m2!1spt-BR!2sbr"
+                width="940" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
     </main>
+
+    <footer>
+        <h1>Receba nossa ajuda!</h1>
+        <p>Solicite o serviço de chaveiro agora mesmo!</p>
+        <button type="text">
+            <a href="#form">Solicitar serviço</a>
+        </button>
+    </footer>
+
+    <div class="end-footer">
+        <section>
+            <span>2021 GOMES CHAVEIRO – Todos os direitos reservados.</strong></span>
+            <span>NÚMERO DE EMERGÊNCIA <strong><span class="highlight">(81) 99844-0719</span></strong></span>
+        </section>
+    </div>
     
 </body>
 </html>
