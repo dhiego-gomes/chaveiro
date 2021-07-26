@@ -8,15 +8,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,300;1,700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/utils.js"></script>
     <title>Gomes Chaveiro</title>
 </head>
 <body>
     <header>
         <section>
-            <span>Serviço de  chaveiro em <strong>Paulista, PE</strong></span>
-            <span>NÚMERO DE EMERGÊNCIA <strong>(81) 99844-0719</strong></span>
+            <span>Serviço de  chaveiro em <strong><a href="#location">Paulista, PE</a></strong></span>
+            <span>NÚMERO DE EMERGÊNCIA <strong><a href="tel:5581998440719">(81) 99844-0719</a></strong></span>
         </section>
     </header>
 
@@ -29,32 +29,32 @@
                 <h2>Ficou <span class="highlight">trancado fora</span> da sua casa, carro ou apartamento?</h2>
                 <p>Solicite o <span class="highlight">serviço de chaveiro</span> agora mesmo!</p>
             </div>
-            <form action="" id="form">
+            <form id="form">
                 <div class="input-data">
                     <label for="name">Nome</label>                        
                     <input type="text" name="name" id="name" required autocomplete="off">
                 </div>
                 <div class="input-data">
-                    <label for="cell">Celular</label>
-                    <input type="text" name="cell" id="cell" required  autocomplete="off">
+                    <label for="phone">Telefone</label>
+                    <input type="number" name="phone" id="phone" required  autocomplete="off">
                 </div>
                 <div class="input-data">
                     <label for="email">E-mail</label>
-                    <input type="text" name="email" id="email" autocomplete="off">
+                    <input type="email" name="email" id="email" autocomplete="off">
                 </div>
                 <div class="input-data">
                     <label for="message">Descreva seu problema</label>
                     <textarea name="text" id="message" required rows="4" autocomplete="off"></textarea>
                 </div>
                 
-                <button type="submit" id="submit">Solicitar serviço</button>
+                <button type="submit" id="submit">Solicitar serviço <div class="spinner"></div></button>
             </form>
         </section>
 
         <section class="services">
             <div class="card-whatsapp">
                 <p>OU ENTRE EM CONTATO PELO WHATSAPP</p>
-                <h2>(81) 99844-0719</h2>
+                <h2><a href="https://wa.me/5581998440719?text=Olá%20" target="_blank">(81) 99844-0719</a></h2>
             </div>
 
             <h1>Nós prestamos os seguintes serviços:</h1>
@@ -99,41 +99,38 @@
     </section>
 
     <section class="reviews">
-        <div class="review" id="review-1">
-            <p>"1 Meus alicates ficaram excelentes! Muito bem amolados. Ameiii"</p>
-            <div class="navigation">
-                <a href="#review-1" class="manual-btn active"></a>
-                <a href="#review-2" class="manual-btn"></a>
-                <a href="#review-3" class="manual-btn"></a>
-            </div>
+        <div class="review">
+            <p>"Meus alicates ficaram excelentes! Muito bem amolados. Ameiii"</p>
         </div>
-        <div class="review" id="review-2">
-            <p>"2 Serviço de qualidade! Um excelente profissional, educado e atencioso."</p>
-            <div class="navigation">
-                <a href="#review-1" class="manual-btn"></a>
-                <a href="#review-2" class="manual-btn active"></a>
-                <a href="#review-3" class="manual-btn"></a>
-            </div>
+        <div class="review">
+            <p>"Serviço de qualidade! Um excelente profissional, educado e atencioso."</p>
         </div>
-        <div class="review" id="review-3">
-            <p>"3 Terceiro comentário."</p>
-            <div class="navigation">
-                <a href="#review-1" class="manual-btn"></a>
-                <a href="#review-2" class="manual-btn"></a>
-                <a href="#review-3" class="manual-btn active"></a>
-            </div>
+        <div class="review">
+            <p>"Terceiro comentário."</p>
+        </div>
+
+        <div class="navigation">
+            <span class="manual-btn" onclick="currentSlide(1)"></span>
+            <span class="manual-btn" onclick="currentSlide(2)"></span>
+            <span class="manual-btn" onclick="currentSlide(3)"></span>
         </div>
         
     </section>
         
-    <section class="location">
+    <section class="location" id="location">
         <h1>Av. B, 75 – Maranguape II Paulista, PE – CEP 53421-021</h1>
         <div class="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1397.1150063830949!2d-34.85940280393142!3d-7.932859532293698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab3d6352f3a1cb%3A0x3f3475fed7f2674f!2sGOMES%20CHAVEIRO!5e0!3m2!1spt-BR!2sbr!4v1626727268200!5m2!1spt-BR!2sbr"
-                width="940" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3136.4168647127126!2d-34.86039258006557!3d-7.9328847655436805!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3f3475fed7f2674f!2sGOMES%20CHAVEIRO!5e0!3m2!1spt-BR!2sbr!4v1627304938673!5m2!1spt-BR!2sbr"
+                width="940" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
         </div>
     </section>
     </main>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://wa.me/5581998440719?text=Olá%20" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px; z-index:1000;" target="_blank">
+        <i style="margin-top:16px" class="fa fa-whatsapp"></i>
+    </a>
 
     <footer>
         <h1>Receba nossa ajuda!</h1>
@@ -146,9 +143,12 @@
     <div class="end-footer">
         <section>
             <span>2021 GOMES CHAVEIRO – Todos os direitos reservados.</strong></span>
-            <span>NÚMERO DE EMERGÊNCIA <strong><span class="highlight">(81) 99844-0719</span></strong></span>
+            <span>NÚMERO DE EMERGÊNCIA <strong><a href="tel:5581998440719"><span class="highlight">(81) 99844-0719</span></a></strong></span>
         </section>
     </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/reviews.js"></script>
     
 </body>
 </html>
