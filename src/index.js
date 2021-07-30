@@ -13,4 +13,4 @@ app.use(express.urlencoded({extended: true}))
 app.use(express.json())
 app.use(route)
 
-app.listen(3000, () => console.log('Server running on PORT 3000.'))
+app.listen(process.env.PORT || 3000, () => console.log('Server running.'))
